@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Robert Khabibullin](https://up.htmlacademy.ru/htmlcss/32/user/1836919).
-- Наставник: `Мария Чернова`.
+- Наставник: [Мария Чернова](https://up.htmlacademy.ru/htmlcss/32/user/49571).
 
 ---
 
