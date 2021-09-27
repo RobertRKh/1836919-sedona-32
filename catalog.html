@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current">Гостиницы</a>
+        </li>
+      </ul>
+      <div class="header-logo">
+        <a class="logo-icon" href="index.html">
+          <img class="logo" src="" alt="Добро пожаловать в Седону.">
+        </a>
+      </div>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="button button-navigation-favorites" href="#">Хочу сюда!</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-inner">
+    <header class="inner-header">
+      <h1 class="inner-header-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a href="index.html" class="breadcrumbs-link">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ul>
+    </header>
+    <section class="catalog-filters">
+      <h2 class="visually-hidden">Фильтры</h2>
+      <form class="catalog-filters-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="catalog-filters-form-group">
+          <legend class="catalog-filters-form-title">Инфраструктура:</legend>
+        </fieldset>
+
+        <fieldset class="catalog-filters-form-group">
+          <legend class="catalog-filters-form-title">Тип жилья:</legend>
+        </fieldset>
+
+        <fieldset class="catalog-filters-form-group">
+          <legend class="catalog-filters-form-title">Стоимость, ₽:</legend>
+          <label class="catalog-filters-label">
+            <input class="catalog-filters-input" type="number" name="min-price"> от
+          </label>
+          <label class="catalog-filters-label">
+            <input class="catalog-filters-input" type="number" name="max-price"> до
+          </label>
+          <button class="range-toggle toggle-min" type="button">
+            <span class="visually-hidden">Изменить минимальную цену</span>
+          </button>
+          <button class="range-toggle toggle-max" type="button">
+            <span class="visually-hidden">Изменить максимальную цену</span>
+          </button>
+        </fieldset>
+
+        <button class="button catalog-filters-form-apply" type="button">Применить</button>
+        <button class="button catalog-filters-form-reset" type="reset">Сбросить</button>
+      </form>
+    </section>
+  </main>
+  <section class="newsletter">
+    <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+    <p class="newsletter-description">
+      Только полезная информация и никакого спама, честное бойскаутское!
+    </p>
+    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="newsletter-form-email">
+        <label class="visually-hidden" for="newsletter-email">Введите Email</label>
+        <input class="newsletter-email" type="email" name="newsletter-email" placeholder="Ваш e-mail"
+          id="newsletter-email" required />
+        <button class="button button-newsletter-subscribe" type="submit">
+          Подписаться
+        </button>
+      </p>
+    </form>
+  </section>
+  <footer class="page-footer">
+    <section class="footer-sical">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="footer-sical-list">
+        <li class="footer-sical-item">
+          <a class="button button-social" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="footer-sical-item">
+          <a class="button button-social" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="footer-sical-item">
+          <a class="button button-social" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-contact">
+      <h2 class="visually-hidden">Наш номер телефона</h2>
+      <a class="footer-contacts-phone" href="tel:78128121212">+7 (812) 812-12-12</a>
+    </section>
+    <section class="footer-developer">
+      <h2 class="visually-hidden">Разработчики сайта</h2>
+      <!--Даже не знаю, стоит такой заголовок делать или нет, но думаю он никому не помешает-->
+      <a class="footer-developer-link" href="https://htmlacademy.ru/">
+        <img class="footer-developer-logo" src="" alt="HTML Academy.">
+      </a>
+    </section>
+  </footer>
+</body>
+
+</html>
