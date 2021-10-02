@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #83b3d3;
+}
+
+/* Page */
+
+.wrapper {
+  background-color: #ffffff;
+}
+
+.page-header {
+  color: #000000;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.button-user-favorites {
+  font-size: 16px;
+  line-height: 21px;
+  background-color: #756257;
+}
+
+/* welcome */
+
+.welcome-wrapper {
+  background-image: url("../images/mountains-bg-header.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.about-wrapper {
+  text-align: center;
+  line-height: 36px;
+}
+
+.about-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about-description {
+  font-size: 22px;
+}
+
+/* advantages */
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-box {
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* search */
+
+.search {
+  text-align: center;
+}
+
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-search-all {
+  background-color: #756257;
+}
+
+/* newsletter */
+
+.newsletter-main {
+  color: #ffffff;
+  text-align: center;
+  background-color: #83b3d3;
+  background-image: url("../images/mountains-bg-newsletter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.newsletter-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* page-footer */
+
+.footer-contact {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* main-inner */
+
+.inner-header {
+  color: #ffffff;
+  background-color: #83b3d3;
+  background-image: url("../images/mountains-bg-catalog.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+}
+
+.inner-filter-form-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.inner-filter-list {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.inner-filter-form-apply {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.inner-filter-form-reset {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  text-transform: none;
+  background-color: transparent;
+}
+
+/* catalog */
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 23px;
+}
+.product-card {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.product-card-button {
+  font-size: 16px;
+  line-height: 21px;
+  background-color: #756257;
+}
+
+.product-card-button-favorites {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.product-card-button-rating {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #83B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.catalog-form-count-title {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.newsletter-inner {
+  color: #000000;
+  text-align: center;
+}
+
+.newsletter-inner-description {
+  color: #333333;
+}
