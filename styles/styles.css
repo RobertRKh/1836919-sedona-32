@@ -67,6 +67,7 @@ a {
 
 .welcome-wrapper {
   text-align: center;
+  background-color: #83b3d3;
   background-image: url("../images/mountains-bg-header.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -80,6 +81,8 @@ a {
 .about-title {
   font-size: 30px;
   font-weight: 700;
+  text-transform: uppercase;
+  color: #000000
 }
 
 .about-description {
@@ -92,10 +95,23 @@ a {
   text-align: center;
 }
 
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .advantages-item:nth-of-type(1),
 .advantages-item:nth-of-type(5) {
   color: #ffffff;
   background-color: #83b3d3;
+}
+
+.advantages-item:nth-of-type(1) .advantages-title,
+.advantages-item:nth-of-type(5) .advantages-title {
+  color: #ffffff;
 }
 
 .advantages-item:nth-of-type(2),
@@ -109,13 +125,6 @@ a {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 /* search */
 
 .search {
@@ -127,6 +136,7 @@ a {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .search-description {
@@ -246,12 +256,14 @@ a {
 .product-card-button {
   font-size: 16px;
   line-height: 21px;
+}
+
+.product-card-button-more {
   background-color: #756257;
 }
 
-.product-card-button-favorites {
-  font-size: 16px;
-  line-height: 21px;
+.product-card-button-in-favorites {
+  background-color: #7DB54F;
 }
 
 .product-card-button-rating {
