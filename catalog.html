@@ -30,19 +30,19 @@
           <img class="logo-image" src="images/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона.">
         </a>
 
-        <ul class="user-list">
-          <li class="user-item">
-            <a class="user-link" href="#">
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="user-item">
-            <a class="user-link" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="user-item">
-            <a class="button button-user-favorites" href="#">Хочу сюда!</a>
+          <li class="navigation-item">
+            <a class="button button-navigation-favorites" href="#">Хочу сюда!</a>
           </li>
         </ul>
 
@@ -129,32 +129,38 @@
               <span class="visually-hidden">Изменить максимальную цену</span>
             </button>
           </fieldset>
-          <button class="button inner-filter-form-apply" type="button">Применить</button>
-          <button class="button inner-filter-form-reset" type="reset">Сбросить</button>
+          <div class="inner-form-button-wrap">
+            <button class="button inner-filter-form-apply" type="button">Применить</button>
+            <button class="button inner-filter-form-reset" type="reset">Сбросить</button>
+          </div>
         </form>
       </section>
 
       <section class="catalog">
-        <h2 class="catalog-title">Найдено гостиниц: <span class="catalog-count">38</span></h2>
-        <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" name="sorting" id="sorting">
-            <option value="popular">Сначала популярные</option>
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expansive">Сначала дорогие</option>
-          </select>
-          <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-        </form>
+        <div class="catalog-navigation-wrap">
+          <h2 class="catalog-title">Найдено гостиниц: <span class="catalog-count">38</span></h2>
+          <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="select-control" name="sorting" id="sorting">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expansive">Сначала дорогие</option>
+            </select>
+            <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+          </form>
 
-        <a class="button button-catalog-list" href="#">
-          <span class="visually-hidden">Показать в виде таблицы</span>
-        </a>
-        <a class="button button-catalog-list" href="#">
-          <span class="visually-hidden">Показать в виде карточки</span>
-        </a>
-        <a class="button button-catalog-list" href="#">
-          <span class="visually-hidden">Показать в виде списка</span>
-        </a>
+          <div class="catalog-sorting-wrap">
+            <a class="button button-catalog-list" href="#">
+              <span class="visually-hidden">Показать в виде таблицы</span>
+            </a>
+            <a class="button button-catalog-list" href="#">
+              <span class="visually-hidden">Показать в виде карточки</span>
+            </a>
+            <a class="button button-catalog-list" href="#">
+              <span class="visually-hidden">Показать в виде списка</span>
+            </a>
+          </div>
+        </div>
 
         <ul class="product-card-list">
           <li class="product-card">
@@ -232,37 +238,39 @@
 
         <button class="button catalog-all-button" type="button">Загрузить еще</button>
 
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
+        <div class="pagination-wrap">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
 
-        <form class="catalog-form-count" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="catalog-form-count-title" for="catalog-form-count">Гостиниц на странице:</label>
-          <select class="select-control" name="catalog-form-count" id="catalog-form-count">
-            <option value="four">4</option>
-            <option value="eight">8</option>
-            <option value="sixteen">16</option>
-            <option value="all">38</option>
-          </select>
-          <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
-        </form>
+          <form class="catalog-form-count" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="catalog-form-count-title" for="catalog-form-count">Гостиниц на странице:</label>
+            <select class="select-control" name="catalog-form-count" id="catalog-form-count">
+              <option value="four">4</option>
+              <option value="eight">8</option>
+              <option value="sixteen">16</option>
+              <option value="all">38</option>
+            </select>
+            <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
+          </form>
+        </div>
 
       </section>
 
