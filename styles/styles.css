@@ -110,11 +110,6 @@ body {
   align-items: center;
 }
 
-.navigation-user .navigation-link {
-  max-width: 463px;
-  min-height: 25px;
-}
-
 .button-navigation-favorites {
   font-size: 16px;
   line-height: 21px;
@@ -124,8 +119,6 @@ body {
 
 .main-container {
   flex-grow: 1;
-  padding:0;
-  margin: 0;
 }
 
 /* welcome */
@@ -222,7 +215,7 @@ body {
 }
 
 .advantages-title {
-  margin: 100px 0 25px 0;
+  margin: 100px 35px 25px 35px;
   padding: 0;
 
   font-size: 24px;
@@ -583,7 +576,15 @@ body {
   margin: 0;
   padding: 0;
 
+  text-align: center;
   list-style-type: none;
+}
+
+.pagination-item {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
 }
 
 .pagination-item:not(:last-child) {
@@ -593,9 +594,9 @@ body {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 55px;
-  height: 55px;
-  padding: 14px 20px;
+  margin: 0;
+  padding: 15px 0;
+  height: 100%;
 
   font-size: 20px;
   line-height: 26px;
