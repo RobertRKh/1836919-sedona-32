@@ -533,7 +533,7 @@ img {
 }
 
 .newsletter-description {
-  margin: 0 0 46px 0;
+  margin: 0 0 48px 0;
   padding: 0;
 
   font-size: 22px;
@@ -1015,11 +1015,7 @@ img {
 }
 
 .product-card-title-link {
-  margin: -4px 0 -2px 0;
-  padding: 5px 10px;
-  grid-column: 1 / 3;
-  grid-row: 1 / 2;
-  justify-self: start;
+  padding: 0px 10px 4px;
 
   text-decoration: none;
   color: #000000;
@@ -1027,8 +1023,10 @@ img {
 }
 
 .product-card-title {
-  margin: 0;
+  margin: 0 0 4px 0;
   padding: 0;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 
   font-size: 24px;
   line-height: 24px;
@@ -1096,22 +1094,27 @@ img {
   justify-self: center;
   min-width: 20px;
   min-height: 21px;
-}
-
-.rating-star {
-  display: inline-block;
-  width: 20px;
-  height: 21px;
   background-image: url("../images/icons/star-icon.svg");
-  background-repeat: no-repeat;
+  background-repeat: space repeat;
   background-position: center;
   background-size: auto auto;
 }
 
-.rating-star + .rating-star {
-  margin-right: -1px;
+.product-card:nth-of-type(1) .rating {
+  width: 93px;
 }
 
+.product-card:nth-of-type(2) .rating {
+  width: 70px;
+}
+
+.product-card:nth-of-type(3) .rating {
+  width: 45px;
+}
+
+.product-card:nth-of-type(4) .rating {
+  width: 45px;
+}
 
 .product-card-button-rating {
   grid-column: 3 / 4;
@@ -1152,7 +1155,6 @@ img {
   right: 0;
   background-color: #E6E6E6;
 }
-
 
 .catalog-all-button {
   padding: 15px 240px;
