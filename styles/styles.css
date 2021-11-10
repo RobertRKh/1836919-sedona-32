@@ -35,7 +35,7 @@ body {
 img {
   display: block;
   max-width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .visually-hidden {
@@ -900,7 +900,7 @@ img {
 .modal-form-field-icon {
   grid-column: 3 / 4;
   justify-self: end;
-  padding: 14px 53px 0 0;
+  padding: 15px 53px 0 0;
   position: relative;
 }
 
@@ -912,10 +912,17 @@ img {
   border: none;
   border-radius: 50%;
   background-color: #83B3D3;
-  background-image: url("../images/icons/info-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+}
+
+.info::after {
+  content: "i";
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .info:hover {
@@ -927,41 +934,39 @@ img {
   box-shadow: 0 0 0 3px #756257;
 }
 
-[data-tooltip]::after {
-  content: attr(data-tooltip);
+.info-content {
   position: absolute;
   width: 256px;
-  padding: 20px 16px 23px 22px;
-  top: 41px;
+  padding: 19px 16px 24px 22px;
+  top: 40px;
   left: -115px;
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #333333;
   border-radius: 10px;
   color: #ffffff;
   font: inherit;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-align: left;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
   display: none;
 }
 
-[data-tooltip]::before {
+.info-content::before {
   content: "";
   position: absolute;
   width: 19px;
   height: 9px;
-  bottom: -16px;
-  left: 3px;
+  top: -9px;
+  right: 119px;
   background-image: url("../images/icons/treangle-modal-icon.svg");
   background-repeat: no-repeat;
   display: none;
 }
 
-[data-tooltip]:hover::after,
-[data-tooltip]:hover::before,
-[data-tooltip]:focus::after,
-[data-tooltip]:focus::before {
+.info-open:hover .info-content,
+.info-open:hover .info-content::before {
   display: block;
 }
 
@@ -1743,10 +1748,6 @@ img {
   min-width: 225px;
 }
 
-.select-count-control {
-
-}
-
 .newsletter-inner {
   padding-top: 86px;
   color: #000000;
@@ -1774,7 +1775,7 @@ img {
   display: none;
 }
 
-.popover-open {
+.popover-open:hover .popover {
   display: block;
 }
 
