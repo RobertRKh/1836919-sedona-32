@@ -706,7 +706,7 @@ img {
   z-index: 2;
 }
 
-.modal-container-clouse {
+.modal-container-close {
   display: none;
 }
 
@@ -722,7 +722,7 @@ img {
   width: 574px;
 }
 
-.modal-clouse-button {
+.modal-close-button {
   position: absolute;
   padding: 0;
   top: 55px;
@@ -735,20 +735,20 @@ img {
   cursor: pointer;
 }
 
-.modal-clouse-button:hover {
+.modal-close-button:hover {
   background-color: #e6e6e6;
 }
 
-.modal-clouse-button:focus {
+.modal-close-button:focus {
   outline: none;
   box-shadow: 0 0 0 3px #83b3d3;
 }
 
-.modal-clouse-button:active {
+.modal-close-button:active {
   box-shadow: none;
 }
 
-.modal-clouse-button:active path {
+.modal-close-button:active path {
   opacity: 0.3;
 }
 
