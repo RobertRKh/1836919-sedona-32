@@ -362,14 +362,11 @@ img {
   width: 400px;
 }
 
-.advantages-item:nth-of-type(2),
-.advantages-item:nth-of-type(4),
-.advantages-item:nth-of-type(6),
-.advantages-item:nth-of-type(8) {
+.advantages-item:nth-of-type(2n) {
   background-color: rgba(131, 179, 211, 0.1);
 }
 
-.advantages-item:nth-of-type(7) {
+.advantages-item:nth-of-type(2n + 7) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -1188,6 +1185,7 @@ img {
 
 .inner-filter-label {
   position: relative;
+  overflow: hidden;
 }
 
 .range-input {
@@ -1244,6 +1242,7 @@ img {
 
 .range-input-text {
   position: absolute;
+  width: 18px;
   right: 16px;
   top: 47%;
   transform: translateY(-50%);
